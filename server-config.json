@@ -7,7 +7,7 @@
 	"gameHostRegisterPort": 2001,
 	"game": {
 		"name": "Server Name - Mission Name",
-		"password": "boobs",
+		"password": "",
 		"scenarioId": "{ECC61978EDCC2B5A}Missions/23_Campaign.conf",
 		"playerCountLimit": 32,
 		"autoJoinable": false,
