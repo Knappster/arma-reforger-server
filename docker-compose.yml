@@ -1,4 +1,4 @@
-version: 3.7
+version: "3.7"
 services:
   arma-reforger-server:
     image: knappster/arma-reforger-server:latest
