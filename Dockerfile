@@ -44,11 +44,11 @@ WORKDIR $HOME_PATH
 COPY --chown=$USER:$USER ./launch.sh ./launch.sh
 COPY --chown=$USER:$USER ./$CONFIG_NAME $CONFIG_PATH
 
+RUN chmod +x ./launch.sh
+
 # https://community.bistudio.com/wiki/Arma_Reforger:Server_Hosting
 EXPOSE 2001/udp
 EXPOSE 50000-65000/udp
 EXPOSE 17777/udp
-
-VOLUME $HOME_PATH
 
 ENTRYPOINT ["./launch.sh"]
