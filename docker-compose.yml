@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  arma-reforger-server:
+  server:
     image: knappster/arma-reforger-server:latest
     restart: unless-stopped
     ports:
@@ -8,9 +8,9 @@ services:
       - "50000-65000:50000-65000/udp"
       - "17777:17777/udp"
     volumes:
-      - home_dir:/home/steam
+      - data:/home/steam
       - ./server-config.json:/home/steam/server-config.json
 
 volumes:
-  home_dir:
+  data:
     driver: local
