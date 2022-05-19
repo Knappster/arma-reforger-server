@@ -5,7 +5,6 @@ services:
     restart: unless-stopped
     ports:
       - "2001:2001/udp"
-      - "50000-65000:50000-65000/udp"
       - "17777:17777/udp"
     volumes:
       - data:/home/steam
