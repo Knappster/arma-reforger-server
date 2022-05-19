@@ -3,8 +3,9 @@
 	"region": "EU",
 	"gameHostBindAddress": "",
 	"gameHostBindPort": 2001,
-	"gameHostRegisterBindAddress": "",
+	"gameHostRegisterBindAddress": "PUBLIC_IP_HERE",
 	"gameHostRegisterPort": 2001,
+	"adminPassword": "",
 	"game": {
 		"name": "Server Name - Mission Name",
 		"password": "",
@@ -13,13 +14,9 @@
 		"autoJoinable": false,
 		"visible": true,
 		"gameProperties": {
-			"serverMaxViewDistance": 2500,
-			"serverMinGrassDistance": 50,
-			"networkViewDistance": 1000,
-			"disableThirdPerson": true,
+			"serverMaxViewDistance": 1600,
 			"fastValidation": true,
-			"battlEye": true,
-			"missionHeader": {}
+			"battlEye": true
 		},
 		"mods": []
 	}
