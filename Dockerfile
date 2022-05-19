@@ -49,5 +49,6 @@ RUN chmod +x ./launch.sh
 # https://community.bistudio.com/wiki/Arma_Reforger:Server_Hosting
 EXPOSE 2001/udp
 EXPOSE 17777/udp
+EXPOSE 1376/tcp
 
 ENTRYPOINT ["./launch.sh"]
