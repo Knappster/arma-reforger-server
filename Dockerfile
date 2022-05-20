@@ -12,6 +12,7 @@ ENV STEAMCMD_PATH="${HOME_PATH}/steamcmd"
 ENV CONFIG_NAME="server-config.json"
 ENV CONFIG_PATH="${HOME_PATH}/${CONFIG_NAME}"
 ENV PROFILE_PATH="${HOME_PATH}/profile"
+ENV MAX_FPS="60"
 
 RUN set -x \
 	&& dpkg --add-architecture i386 \
