@@ -11,7 +11,6 @@ ENV APP_DATA_PATH="${HOME_PATH}/app_data"
 ENV ARMA_PATH="${APP_DATA_PATH}/arma_reforger"
 ENV STEAMCMD_PATH="${APP_DATA_PATH}/steamcmd"
 ENV CONFIG_NAME="server-config.json"
-ENV CONFIG_PATH="${HOME_PATH}/${CONFIG_NAME}"
 ENV PROFILE_NAME="profile"
 ENV PROFILE_PATH="${HOME_PATH}/profile"
 ENV MAX_FPS="60"
@@ -45,7 +44,7 @@ USER $USER
 WORKDIR $HOME_PATH
 
 COPY --chown=$USER:$USER ./launch.sh ./launch.sh
-COPY --chown=$USER:$USER ./$CONFIG_NAME $CONFIG_PATH
+COPY --chown=$USER:$USER ./$CONFIG_NAME $HOME_PATH/$CONFIG_NAME
 
 RUN chmod +x ./launch.sh
 
