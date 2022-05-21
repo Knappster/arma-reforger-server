@@ -12,4 +12,28 @@ Start server with:
 
 Server profile is saved in the `./profile` directory.
 
-The max server FPS can be adjusted via the environment variable `MAX_FPS`. It can be changed in the `docker-compose.yml` file as well as the default server ports.
+The max server FPS can be adjusted via the environment variable `MAX_FPS`.
+
+Example `docker-compose.yml`:
+```yaml
+version: "3.7"
+services:
+  server:
+    image: knappster/arma-reforger-server:latest
+    restart: unless-stopped
+    user: "1000:1000"
+    environment:
+      MAX_FPS: 60
+    ports:
+      - "2001:2001/udp"
+      - "17777:17777/udp"
+      - "1376:1376/tcp"
+    volumes:
+      - app_data:/home/steam/app_data
+      - ./server-config.json:/home/steam/server-config.json
+      - ./profile:/home/steam/profile
+
+volumes:
+  app_data:
+    driver: local
+```
