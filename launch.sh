@@ -7,4 +7,4 @@ $STEAMCMD_PATH/steamcmd.sh +force_install_dir $ARMA_PATH +login anonymous +app_u
 
 echo "Starting Arma Reforger Server."
 cd $ARMA_PATH
-./ArmaReforgerServer -config $CONFIG_PATH -profile $PROFILE_PATH/$PROFILE_NAME -maxFPS $MAX_FPS
+./ArmaReforgerServer -config $CONFIG_PATH -profile $PROFILE_PATH -maxFPS $MAX_FPS
