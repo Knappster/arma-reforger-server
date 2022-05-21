@@ -7,11 +7,13 @@ ARG USER=steam
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV HOME_PATH="/home/${USER}"
-ENV ARMA_PATH="${HOME_PATH}/arma_server"
-ENV STEAMCMD_PATH="${HOME_PATH}/steamcmd"
+ENV APP_DATA_PATH="${HOME_PATH}/app_data"
+ENV ARMA_PATH="${APP_DATA_PATH}/arma_reforger"
+ENV STEAMCMD_PATH="${APP_DATA_PATH}/steamcmd"
 ENV CONFIG_NAME="server-config.json"
 ENV CONFIG_PATH="${HOME_PATH}/${CONFIG_NAME}"
-ENV PROFILE_PATH="${HOME_PATH}/profile"
+ENV PROFILE_NAME="profile"
+ENV PROFILE_PATH="${HOME_PATH}/profiles"
 ENV MAX_FPS="60"
 
 RUN set -x \
