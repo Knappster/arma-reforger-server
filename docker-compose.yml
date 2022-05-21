@@ -3,6 +3,7 @@ services:
   server:
     image: knappster/arma-reforger-server:latest
     restart: unless-stopped
+    user: "1000:1000"
     environment:
       MAX_FPS: 60
     ports:
