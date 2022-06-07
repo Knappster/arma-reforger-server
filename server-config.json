@@ -19,5 +19,7 @@
 			"battlEye": true
 		},
 		"mods": []
-	}
+	},
+	"a2sQueryEnabled": true,
+	"steamQueryPort": 17777
 }
